@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
-    <script async custom-element="amp-app-banner" src="https://cdn.ampproject.org/v0/amp-app-banner-0.1.js"></script>
+    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     <style amp-custom>
       /* any custom style goes here */
       body {
@@ -34,6 +33,9 @@
       }
     </script>
     <style >
+      .author{
+        color: gray;
+      }
       h1{
         font-family: sans-serif;
         text-align: left;
@@ -46,7 +48,7 @@
         margin-right: 24px;
         margin-top: 16px;
         margin-bottom: 16px;
-        line-height: 2;
+        line-height: 1.8;
       }
     </style>
 
@@ -58,17 +60,30 @@
   </head>
 
   <body>
-    <amp-app-banner id="demo-app-banner-2134">
-    <amp-img src="https://example.com/icon.png"
-                     width="60" height="51">
-    </amp-img>
-    <p>Experience a richer experience on our mobile app!</p>
-    <div class="actions">
-      <button open-button>Get the app</button>
-    </div>
-  </amp-app-banner>
+  
     <h1>Welcome to the mobile web</h1>
+    <p class="author">By Aditya Shirole</p>
+    
+    <p class="heading">
+      <amp-social-share type="twitter"
+          width="45"
+          height="33"></amp-social-share>
+      <amp-social-share type="facebook"
+          width="45"
+          height="33"
+          data-attribution=254325784911610></amp-social-share>
+      <amp-social-share type="gplus"
+          width="45"
+          height="33"></amp-social-share>
+      <amp-social-share type="email"
+          width="45"
+          height="33"></amp-social-share>
+      <amp-social-share type="pinterest"
+          width="45"
+          height="33"></amp-social-share>
+    </p>
     <br>
+
     <p>
     Apple announced it’s new MacBook line, and as they seem to do with every major product release, they’ve dropped something people take for granted and can’t imagine life without. This time around it’s the escape key.
 They’ve replaced it with the Touch Bar. It’s so disappointing after anticipating a touch screen for years, I’m not even going to annoy you with a photo.
